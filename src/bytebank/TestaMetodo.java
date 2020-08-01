@@ -3,7 +3,7 @@ package bytebank;
 public class TestaMetodo {
 	
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(100, 100);
 		conta.deposita(100);
 		System.out.println("Saldo inicial: " + conta.getSaldo());
 		conta.deposita(50);
@@ -13,7 +13,7 @@ public class TestaMetodo {
 		conseguiuRetirar = conta.saca(100);
 		System.out.println("tentou sacar 100, conseguiu? " + conseguiuRetirar +", saldo:" + conta.getSaldo());
 		
-		Conta conta2 = new Conta();
+		Conta conta2 = new Conta(100, 100);
 		conta2.deposita(10);
 		System.out.println("Saldo conta1: " + conta.getSaldo() + " saldo conta2: " + conta2.getSaldo());
 		
